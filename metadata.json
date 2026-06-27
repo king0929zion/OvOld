@@ -1,0 +1,6 @@
+{
+  "name": "Secure Messenger",
+  "description": "A UI prototype for a secure messaging client featuring a card-based calendar app visual style, huge rounded corners, and low-saturation colored cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-bg: #E8E8E4;
+  --color-bg-deep: #D9D9D5;
+  --color-surface: #FDFDF8;
+  --color-surface-soft: #F2F2EE;
+  --color-surface-muted: #E1E1DD;
+  --color-text-main: #101010;
+  --color-text-secondary: #3C3C39;
+  --color-text-muted: #9A9A94;
+  --color-black: #050505;
+  --color-white: #FFFFFF;
+  --color-border-soft: rgba(0, 0, 0, 0.08);
+  --color-bubble-me: #6A8696;
+  --color-bubble-other: #ECEAE4;
+  --color-card-yellow: #E7BF75;
+  --color-card-green: #AFC2AA;
+  --color-card-blue: #9FAFC0;
+  --color-card-purple: #B8AACD;
+  --color-card-pink: #D0A0A8;
+  --color-card-teal: #9FCBC7;
+  --color-card-olive: #B9BE95;
+  --color-danger: #8B3036;
+  --color-success: #2F6A4F;
+  --color-warning: #8A6028;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
