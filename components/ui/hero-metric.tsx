@@ -16,13 +16,13 @@ export function HeroMetric({
   summaryLine2,
 }: HeroMetricProps) {
   return (
-    <div className="flex justify-between items-start px-2 py-2">
+    <div className="flex justify-between items-start px-2 py-1">
       <div className="flex flex-col">
-        <span className="text-text-secondary text-[22px] font-medium leading-tight">{subtitle}</span>
-        <span className="text-black text-[64px] font-semibold leading-none -ml-1 tracking-tight my-2">
+        <span className="text-text-secondary text-[20px] font-medium leading-tight">{subtitle}</span>
+        <span className="text-black text-[56px] font-semibold leading-none -ml-1 tracking-tight my-1">
           {value}
         </span>
-        <span className="text-text-secondary text-[20px] font-medium leading-tight">{label}</span>
+        <span className="text-text-secondary text-[18px] font-medium leading-tight">{label}</span>
       </div>
 
       {(summaryTitle || summaryLine1 || summaryLine2) && (

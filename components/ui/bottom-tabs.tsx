@@ -15,7 +15,7 @@ export function BottomTabs() {
   ];
 
   return (
-    <div className="fixed bottom-[14px] left-6 right-6 h-[54px] bg-surface rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex items-center p-1 z-50 border border-black/5">
+    <div className="fixed bottom-[14px] left-6 right-6 h-[54px] bg-surface rounded-[27px] flex items-center p-1 z-50 border border-black/5">
       <div className="grid grid-cols-3 w-full h-full gap-1">
         {tabs.map((tab) => {
           const isActive = pathname.startsWith(tab.href);

@@ -24,14 +24,14 @@ export default function LockPage() {
   };
 
   return (
-    <div className="flex-1 flex flex-col pt-24 h-full bg-bg-deep">
-      <div className="px-6 flex flex-col items-center mb-10">
-        <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-4 text-white text-[24px] font-semibold shadow-md">
+    <div className="flex-1 flex flex-col pt-20 h-full bg-bg-deep">
+      <div className="px-6 flex flex-col items-center mb-8">
+        <div className="w-14 h-14 bg-black rounded-full flex items-center justify-center mb-3 text-white text-[20px] font-semibold">
           Z
         </div>
-        <h2 className="text-[20px] font-semibold text-text-main mb-8">Zion Mu</h2>
+        <h2 className="text-[18px] font-semibold text-text-main mb-6">Zion Mu</h2>
         
-        <h1 className="text-[32px] font-bold tracking-widest text-text-secondary mb-12">
+        <h1 className="text-[28px] font-bold tracking-widest text-text-secondary mb-10">
           已锁定
         </h1>
 
@@ -40,36 +40,36 @@ export default function LockPage() {
             <div 
               key={i} 
               className={cn(
-                "w-4 h-4 rounded-full transition-all duration-300", 
-                pin.length > i ? "bg-black scale-110" : "border-2 border-black/30"
+                "w-3.5 h-3.5 rounded-full transition-all duration-300", 
+                pin.length > i ? "bg-black scale-110" : "border-2 border-black/20"
               )} 
             />
           ))}
         </div>
       </div>
 
-      <PagePanel className="mt-auto px-6 py-10" noPadding>
-        <div className="grid grid-cols-3 gap-y-6 h-full items-center pb-8 pt-4">
+      <PagePanel className="mt-auto px-6 py-8 shadow-[0_-8px_30px_rgba(0,0,0,0.04)]" noPadding>
+        <div className="grid grid-cols-3 gap-y-4 h-full items-center pb-6 pt-2">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
             <button 
               key={num} 
               onClick={() => handlePress(num)}
-              className="text-[32px] font-semibold flex justify-center active:bg-surface-muted rounded-full w-20 h-20 items-center justify-self-center transition-colors"
+              className="text-[28px] font-medium flex justify-center active:bg-surface-soft rounded-full w-20 h-20 items-center justify-self-center transition-colors"
             >
               {num}
             </button>
           ))}
-          <button onClick={() => router.push("/main/chats")} className="flex justify-center active:bg-surface-muted rounded-full w-20 h-20 items-center justify-self-center transition-colors">
-            <Fingerprint size={32} className="text-text-secondary" />
+          <button onClick={() => router.push("/main/chats")} className="flex justify-center active:bg-surface-soft rounded-full w-20 h-20 items-center justify-self-center transition-colors">
+            <Fingerprint size={28} className="text-text-secondary" />
           </button>
           <button 
             onClick={() => handlePress(0)}
-            className="text-[32px] font-semibold flex justify-center active:bg-surface-muted rounded-full w-20 h-20 items-center justify-self-center transition-colors"
+            className="text-[28px] font-medium flex justify-center active:bg-surface-soft rounded-full w-20 h-20 items-center justify-self-center transition-colors"
           >
             0
           </button>
-          <button onClick={handleDelete} className="flex justify-center active:bg-surface-muted rounded-full w-20 h-20 items-center justify-self-center transition-colors">
-            <Delete size={32} className="text-text-secondary" />
+          <button onClick={handleDelete} className="flex justify-center active:bg-surface-soft rounded-full w-20 h-20 items-center justify-self-center transition-colors">
+            <Delete size={28} className="text-text-secondary" />
           </button>
         </div>
       </PagePanel>

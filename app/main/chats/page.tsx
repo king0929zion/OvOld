@@ -19,15 +19,15 @@ export default function ChatsPage() {
   ];
 
   return (
-    <div className="flex-1 flex flex-col pt-14 h-full pb-24 overflow-y-auto">
-      <div className="px-6 flex justify-between items-center mb-6">
+    <div className="flex-1 flex flex-col pt-10 h-full pb-20 overflow-y-auto">
+      <div className="px-6 flex justify-between items-center mb-4">
         <SegmentedPills tabs={tabs} />
         <CircleBtn onClick={() => setIsAddSheetOpen(true)}>
           <Plus size={24} />
         </CircleBtn>
       </div>
 
-      <div className="px-4 mb-6">
+      <div className="px-4 mb-4">
         <HeroMetric
           subtitle="星期二"
           value="13"
@@ -38,8 +38,8 @@ export default function ChatsPage() {
         />
       </div>
 
-      <PagePanel className="flex-1 pb-24">
-        <div className="flex justify-between items-center mb-6">
+      <PagePanel className="flex-1 pb-20">
+        <div className="flex justify-between items-center mb-4">
           <h3 className="text-[20px] font-semibold">最近对话</h3>
           <button className="text-text-muted font-medium text-[16px] active:opacity-70">搜索</button>
         </div>

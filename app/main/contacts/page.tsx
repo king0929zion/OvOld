@@ -15,8 +15,8 @@ export default function ContactsPage() {
   ];
 
   return (
-    <div className="flex-1 flex flex-col pt-14 h-full pb-24 overflow-y-auto">
-      <div className="px-6 flex justify-between items-center mb-6">
+    <div className="flex-1 flex flex-col pt-10 h-full pb-20 overflow-y-auto">
+      <div className="px-6 flex justify-between items-center mb-4">
         <SegmentedPills tabs={tabs} />
         <Link href="/contact/add">
           <CircleBtn as="div">
@@ -25,7 +25,7 @@ export default function ContactsPage() {
         </Link>
       </div>
 
-      <div className="px-4 mb-6">
+      <div className="px-4 mb-4">
         <HeroMetric
           subtitle="通讯录"
           value="48"
@@ -36,7 +36,7 @@ export default function ContactsPage() {
         />
       </div>
 
-      <PagePanel className="flex-1 pb-24">
+      <PagePanel className="flex-1 pb-20">
         <div className="flex flex-col gap-3">
           <Link href="/contact/alice" className="active:scale-[0.98] transition-transform block">
             <ColorCard

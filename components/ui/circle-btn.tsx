@@ -10,7 +10,7 @@ export function CircleBtn({ children, className, as = "button", ...props }: Circ
   return (
     <Comp
       className={cn(
-        "w-[50px] h-[50px] rounded-full bg-surface-muted flex items-center justify-center text-text-main shrink-0 transition-opacity active:opacity-70",
+        "w-[44px] h-[44px] rounded-full bg-surface-muted border border-black/5 flex items-center justify-center text-text-main shrink-0 transition-transform active:scale-95",
         className
       )}
       {...(props as any)}

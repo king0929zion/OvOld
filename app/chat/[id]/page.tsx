@@ -117,11 +117,11 @@ export default function ChatDetailPage() {
 
       {/* Input Area */}
       <div className="absolute bottom-6 left-4 right-4 flex items-end gap-2.5 z-50">
-        <button className="w-[38px] h-[38px] shrink-0 flex items-center justify-center rounded-full bg-white text-text-secondary border border-black/5 active:scale-[0.9] transition-transform shadow-[0_4px_20px_rgb(0,0,0,0.05)]">
+        <button className="w-[38px] h-[38px] shrink-0 flex items-center justify-center rounded-full bg-white text-text-secondary border border-black/5 active:scale-[0.9] transition-transform">
           <Plus size={20} />
         </button>
         
-        <div className="flex-1 min-h-[38px] bg-white border border-black/5 rounded-[19px] pl-3.5 pr-1 py-1 flex items-end gap-2 shadow-[0_4px_20px_rgb(0,0,0,0.05)]">
+        <div className="flex-1 min-h-[38px] bg-white border border-black/5 rounded-[19px] pl-3.5 pr-1 py-1 flex items-end gap-2">
           <div className="flex-1 min-h-[30px] flex items-center">
             <input
               type="text"

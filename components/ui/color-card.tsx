@@ -33,7 +33,7 @@ export function ColorCard({
   return (
     <div
       className={cn(
-        "min-h-[128px] rounded-[26px] p-5 flex flex-col justify-between text-text-main",
+        "min-h-[108px] rounded-[24px] p-4 flex flex-col justify-between text-text-main",
         colorClasses[color],
         className
       )}

@@ -36,7 +36,7 @@ export default function SettingsPage() {
       <PagePanel className="flex-1 pb-24" noPadding>
         <div className="flex flex-col p-4 gap-2">
           <Link href="#" className="flex items-center gap-4 bg-surface-soft p-4 rounded-[20px] active:scale-[0.98] transition-transform">
-            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white text-[20px] font-bold shadow-md">
+            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white text-[20px] font-bold">
               Z
             </div>
             <div className="flex-1 flex flex-col">
@@ -47,7 +47,7 @@ export default function SettingsPage() {
           </Link>
 
           <Link href="#" className="flex items-center gap-4 bg-card-pink/30 p-4 rounded-[20px] active:scale-[0.98] transition-transform mt-2">
-            <div className="w-10 h-10 bg-card-pink text-white rounded-full flex items-center justify-center shadow-sm">
+            <div className="w-10 h-10 bg-card-pink text-white rounded-full flex items-center justify-center">
               <DatabaseBackup size={20} />
             </div>
             <div className="flex-1 flex flex-col">
